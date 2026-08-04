@@ -1,0 +1,16 @@
+[package]
+name = "mise-en-place"
+version = "0.1.0"
+compiler = "0.15.0" # It will be fine with 0.14 too but 0.15 fixed some stuff regarding bibliography rendering and is generally better
+entrypoint = "lib.typ"
+authors = ["Kulpas <@jan-Kulpas>"]
+license = "MIT"
+description = "A recipe card generator based on the recipe format from https://www.cookingforengineers.com/"
+# repository = "" # TODO: push
+keywords = [
+    "cooking",
+    "recipe",
+    "diagram",
+    "tree",
+]
+categories = ["fun", "visualization"]
