@@ -1,1 +1,56 @@
+#import "@local/mise-en-place:0.1.0": *
 
+#recipe(
+  columns: (auto, auto, auto, 1fr, auto, 1fr, 1fr),
+  ingredient[1 cup boiling water],
+  ingredient[2.5 tsp baking soda],
+  step(combine: 2)[mix],
+  step[let cool],
+  ingredient[1/2 tsp salt],
+  ingredient[300g flour],
+  step(combine: 2)[cream],
+  ingredient[2 eggs],
+  step[beat],
+  step(combine: 2)[cream],
+  ingredient[1/2 cup butter],
+  ingredient[100g sugar],
+  ingredient[150 All-Bran cereal],
+  ingredient[100g Bran Flakes cereal],
+  step(combine: 6)[mix, alternating],
+  ingredient[1 pint buttermilk],
+  step(combine: 2)[mix],
+  step[refrigerate overnight],
+  step[bake as \~24 muffins at 400#{ sym.degree }F for 25 min.],
+)
+
+#recipe(
+  step(combine: 0)[Preheat oven to 200#{ sym.degree }C ],
+  columns: (auto, auto, 1fr, 1fr, 1fr, 1fr),
+  ingredient[75g roasted red peppers],
+  step[dice],
+  ingredient[olive oil],
+  step(combine: 2)[saute mid-high heat 60s.],
+  ingredient[200g passata],
+  ingredient[75g salsa],
+  ingredient[2g (½t)  salt],
+  ingredient[5g (1¼t) sugar],
+  ingredient[2g (1t) paprika],
+  ingredient[2g (1t) cumin],
+  ingredient[1g (½t) coriander],
+  ingredient[2g (¾t) garlic powder],
+  ingredient[1g (½t) black pepper],
+  step(combine: 10)[simmer 3-4 min. until thick],
+  ingredient[2 eggs],
+  step(combine: 2)[crack into well in the pan],
+  step[bake for 5 min.],
+)
+
+#recipe(
+  columns: (auto, auto, auto, auto),
+  ingredient[1 lb. (450 g) fresh cranberries],
+  ingredient[1 cup (235 mL) water],
+  ingredient[1 cup (200 g) sugar],
+  step(combine: 2, vertical: true)[dissolve],
+  step(vertical: true)[boil],
+  step(combine: 2, vertical: true)[simmer until berries split],
+)
