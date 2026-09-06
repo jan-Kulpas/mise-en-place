@@ -5,9 +5,9 @@
   bottom: outer,
 )
 
-#let ingredient(value, size: 1, depth: 0) = (
+#let ingredient(value, rowspan: 1, depth: 0) = (
   type: "ingredient",
-  size: size,
+  rowspan: rowspan,
   depth: depth,
   value: value,
 )

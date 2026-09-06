@@ -1,35 +1,68 @@
-#import "@local/mise-en-place:0.1.0": *
+#import "@local/mise-en-place:0.1.0": ingredient, recipe, step
+
+#set text(
+  font: "Trebuchet MS",
+)
+#show link: underline
+
+= Vegetable Curry by Hundred Rabbits (with some additions)
+Original Recipe: https://grimgrains.com/site/vegetable_curry.html #linebreak()
+_this one is really good btw, you should make it_
 
 #recipe(
-  columns: (auto, auto, auto, 1fr, auto, 1fr, 1fr),
-  ingredient[1 cup boiling water],
-  ingredient[2.5 tsp baking soda],
-  step(combine: 2)[mix],
-  step[let cool],
-  ingredient[1/2 tsp salt],
-  ingredient[300g flour],
-  step(combine: 2)[cream],
-  ingredient[2 eggs],
-  step[beat],
-  step(combine: 2)[cream],
-  ingredient[1/2 cup butter],
-  ingredient[100g sugar],
-  ingredient[150 All-Bran cereal],
-  ingredient[100g Bran Flakes cereal],
-  step(combine: 6)[mix, alternating],
-  ingredient[1 pint buttermilk],
-  step(combine: 2)[mix],
-  step[refrigerate overnight],
-  step[bake as \~24 muffins at 400#{ sym.degree }F for 25 min.],
+  columns: (auto, 2fr, 1fr, auto, auto, auto, auto),
+  ingredient[145g (¾ cup) basmati rice],
+  step[rinse],
+  ingredient[375ml (1½ cup) water],
+  ingredient[2g salt],
+  step(combine: 3)[cook in rice cooker],
+  ingredient[splash of sesame oil],
+  ingredient[1 yellow onion],
+  step[dice],
+  step(combine: 2)[fry in pot 1 min. on mid-low heat],
+  ingredient[2 carrots],
+  step[slice thin],
+  ingredient(rowspan: 2)[3 medium potatoes],
+  step[cube into mid-small pieces],
+  ingredient(rowspan: 2)[1 red bell pepper],
+  step[slice into mid-small pieces],
+  step(combine: 4, vertical: true)[mix and coat with oil],
+  step(vertical: true)[cook on low with lid 10 min.],
+  ingredient[13 ml olive oil],
+  ingredient[13 ml flour],
+  step(combine: 2)[fry into a roux until golden brown],
+  ingredient[1 tsp garam masala],
+  ingredient[1 tsp curry],
+  ingredient[½ tsp cayenne],
+  step(combine: 4)[mix into paste, on mid-low heat],
+  ingredient[375ml (1½ cup) hot water],
+  ingredient[vegetable boulion cube],
+  ingredient[½ tsp dijon mustard],
+  ingredient[1 tbsp tomato paste],
+  step(combine: 5, vertical: true)[mix until cube dissolved],
+  ingredient[1 apple],
+  step[grate],
+  ingredient[salt to taste],
+  ingredient[pepper to taste],
+  step(combine: 4, vertical: true)[mix],
+  ingredient[3-4 sticks of celery],
+  step[slice],
+  step(combine: 3, vertical: true)[stir into sauce],
+  step(combine: 2, vertical: true)[serve together],
 )
+
+#pagebreak()
+
+= 15 Minute Shakshuka by Brian Lagerstrom
+Original Recipe: https://brianlagerstrom.com/recipes/15-minute-shakshuka/
 
 #recipe(
   step(combine: 0)[Preheat oven to 200#{ sym.degree }C ],
-  columns: (auto, auto, 1fr, 1fr, 1fr, 1fr),
+  columns: (auto, 1fr, 2fr, auto, auto, auto),
   ingredient[75g roasted red peppers],
   step[dice],
   ingredient[olive oil],
-  step(combine: 2)[saute mid-high heat 60s.],
+  step(combine: 2)[saute mid-high heat for 60s.],
   ingredient[200g passata],
   ingredient[75g salsa],
   ingredient[2g (½t)  salt],
@@ -39,18 +72,8 @@
   ingredient[1g (½t) coriander],
   ingredient[2g (¾t) garlic powder],
   ingredient[1g (½t) black pepper],
-  step(combine: 10)[simmer 3-4 min. until thick],
+  step(combine: 10, vertical: true)[simmer 3-4 min. until thick],
   ingredient[2 eggs],
-  step(combine: 2)[crack into well in the pan],
-  step[bake for 5 min.],
-)
-
-#recipe(
-  columns: (auto, auto, auto, auto),
-  ingredient[1 lb. (450 g) fresh cranberries],
-  ingredient[1 cup (235 mL) water],
-  ingredient[1 cup (200 g) sugar],
-  step(combine: 2, vertical: true)[dissolve],
-  step(vertical: true)[boil],
-  step(combine: 2, vertical: true)[simmer until berries split],
+  step(combine: 2, vertical: true)[crack into well in the pan],
+  step(vertical: true)[bake for 5 min.],
 )

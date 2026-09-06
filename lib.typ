@@ -27,11 +27,11 @@
           x: 0,
           y: depths.at(0),
           colspan: 1,
-          rowspan: item.size,
+          rowspan: item.rowspan,
           align(horizon + left)[#item.value],
         ),
       )
-      depths.at(0) += item.size
+      depths.at(0) += item.rowspan
       stack.push(item)
     } else if item.type == "step" {
       // for debug purposes:
@@ -66,7 +66,7 @@
           let ing = stack.pop()
 
           if ing.depth > nx { nx = ing.depth }
-          ns += ing.size
+          ns += ing.rowspan
         }
         nx += 1
         if depths.at(nx, default: none) == none {
@@ -122,7 +122,7 @@
         )
         depths.at(nx) += ns
         stack.push(
-          ingredient(item.value, size: ns, depth: nx),
+          ingredient(item.value, rowspan: ns, depth: nx),
         )
       }
     }
@@ -140,17 +140,13 @@
     )
   }
 
-  set text(
-    font: "Trebuchet MS",
-  )
-
   table(
     stroke: frame(
       1.5pt + rgb("40A040"),
       0.75pt + rgb("40A040"),
     ),
     align: horizon + center,
-    inset: (x: 0.25em, y: 0.25em),
+    inset: (x: 0.30em, y: 0.30em),
     columns: if (columns != none) {
       assert(
         columns.len() == depths.len(),
@@ -169,9 +165,9 @@
   )
 }
 
-#let ingredient(value, size: 1) = (
+#let ingredient(value, rowspan: 1) = (
   type: "ingredient",
-  size: size,
+  rowspan: rowspan,
   depth: 0,
   value: box(
     inset: (y: 0.15em),
