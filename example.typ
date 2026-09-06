@@ -1,4 +1,4 @@
-#import "@local/mise-en-place:0.1.0": ingredient, recipe, step
+#import "@preview/mise-en-place:0.1.0": ingredient, recipe, step
 
 #set text(
   font: "Trebuchet MS",

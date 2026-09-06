@@ -9,7 +9,7 @@ See [`example.typ`](https://github.com/jan-Kulpas/mise-en-place/blob/main/exampl
 ## Usage
 
 ```typ
-#import "@local/mise-en-place:0.1.0": ingredient, recipe, step
+#import "@preview/mise-en-place:0.1.0": ingredient, recipe, step
 ```
 
 To create a recipe, declare ingredients using the `ingredient()` function inside `recipe()`. Use the `step(combine: n)` function to combine `n` last ingredients into a single item. The content of the `step()` function will be displayed to the right of the ingredients in a new cell. New columns will be automatically inserted as needed. 
